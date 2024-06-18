@@ -1,3 +1,3 @@
 FROM python:3.7-bullseye
-COPY entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+COPY entrypoint.py /entrypoint.py
+CMD ["python", "-u", "/entrypoint.py"]
