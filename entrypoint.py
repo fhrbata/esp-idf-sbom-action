@@ -36,7 +36,7 @@ log(f'USER_NAME: {USER_NAME}')
 log(f'JOB_URL: {JOB_URL}')
 
 log('installing esp-idf-sbom ...')
-run(['pip', 'install', 'esp-idf-sbom'], check=True)
+run(['pip', 'install', 'git+https://github.com/fhrbata/esp-idf-sbom.git@fix/pyparsing_version'], check=True)
 
 log('running vulnerability check ...')
 try:
